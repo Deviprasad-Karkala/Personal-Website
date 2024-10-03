@@ -1,0 +1,24 @@
+version: '3.6'
+services:
+  website:
+    image: deviprasad_portfolio
+    container_name: deviprasad_portfolio_container
+    ports:
+      - "83:80"
+      - "446:443"
+    restart: always
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    volumes:
+      - .:/root/www/
+      - /root/shared_pdf:/var/www/html/shared_pdf
+    tty: true
+    networks:
+      - greed_net
+
+networks:
+  greed_net:
+    name: greed_net
+    external: true
+
