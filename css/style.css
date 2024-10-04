@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
 }
 
 html {
@@ -18,6 +18,11 @@ body {
     letter-spacing: .1rem;
     display: flex;
     flex-direction: column;
+    
+}
+
+p{
+    word-wrap: break-word;
 }
 
 /* Navbar */
@@ -28,15 +33,16 @@ main {
 
 nav .left img {
     width: 75px;
-    
+
 }
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 9rem;
     width: 100%;
-    background-color:#f6f6f6;
+    background-color: #f6f6f6;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -64,7 +70,7 @@ nav ul li a {
 
 }
 
-nav ul li:after{
+nav ul li:after {
     content: '';
     margin: auto;
     display: block;
@@ -73,11 +79,12 @@ nav ul li:after{
     background-color: transparent;
     /* transition: width 0.5s ease,background-color 0.5s ease; */
     transition: all 0.7s ease;
-  }
-  nav ul li:hover:after{
+}
+
+nav ul li:hover:after {
     width: 100%;
     background-color: #222222;
-  }
+}
 
 a {
     letter-spacing: 0rem;
@@ -149,6 +156,7 @@ nav .right .btn:hover {
     color: #222222;
     letter-spacing: -0.1rem;
 }
+
 .leftsection p {
     font-size: 1.8rem;
     font-weight: 400;
@@ -181,6 +189,7 @@ nav .right .btn:hover {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 }
+
 #SLink {
     border: .2rem solid #636a7E;
     border-radius: .7rem;
@@ -206,7 +215,8 @@ nav .right .btn:hover {
     text-transform: uppercase;
     margin-bottom: -1rem;
 }
-.mainHead{
+
+.mainHead {
     font-size: 4.3rem;
     font-weight: 900;
     color: #222222;
@@ -215,7 +225,7 @@ nav .right .btn:hover {
     margin-bottom: -0.7rem;
 }
 
-.subHead{
+.subHead {
     font-size: 1.8rem;
     font-weight: 400;
     color: #222222;
@@ -229,7 +239,7 @@ nav .right .btn:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     align-self: center;
-  
+
 
 }
 
@@ -242,7 +252,7 @@ nav .right .btn:hover {
     margin: 3rem 6.4rem;
     border: .1rem solid rgba(49, 49, 49, 0.1);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background-color:#f3f3f3;
+    background-color: #f3f3f3;
     border-radius: 4rem;
     padding: 5rem;
     font-size: 1.8rem;
@@ -253,34 +263,36 @@ nav .right .btn:hover {
 }
 
 
-.skills .box img{
+.skills .box img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
     border-radius: 40px;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
-.skills .box h1{
-    
+
+.skills .box h1 {
+
     font-size: 2rem;
     font-weight: 800;
     letter-spacing: 0rem;
 }
-.skills p{
-    
+
+.skills p {
+
     letter-spacing: 0rem;
     font-size: 1.5rem;
 }
 
-.skills .live{
+.skills .live {
     margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
     color: #1b1b1b;
-    text-decoration:underline
+    text-decoration: underline
 }
 
-.skills .live:hover{
+.skills .live:hover {
     font-size: 1.54rem;
     transition: 0.5s ease;
 }
@@ -306,16 +318,17 @@ nav .right .btn:hover {
     margin: 0rem 4rem 4rem 4rem;
     border: .1rem solid rgba(49, 49, 49, 0.1);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background-color:#f3f3f3;
+    background-color: #f3f3f3;
     border-radius: 3rem;
     padding: 2rem 0rem;
     font-size: 1.8rem;
     font-weight: 400;
     color: #424242;
-    
+
 
 }
-.services video{
+
+.services video {
     width: 90%;
     border-radius: 2.5rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -360,75 +373,88 @@ nav .right .btn:hover {
     letter-spacing: 0rem;
     width: 5%;
     margin-top: -1rem;
-
+    word-wrap: break-word;
 }
-.rightAbout h1{
+
+.rightAbout h1 {
     letter-spacing: 0rem;
 
- 
+
 }
 
 .leftAbout {
     width: 30%;
     margin-right: 5rem;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center content horizontally */
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center content horizontally */
 }
 
 .photoContainer {
-    width: 100%; /* Take full width of the container */
-    aspect-ratio: 1 / 1; /* Maintain a 1:1 aspect ratio (width and height are the same) */
+    width: 100%;
+    /* Take full width of the container */
+    aspect-ratio: 1 / 1;
+    /* Maintain a 1:1 aspect ratio (width and height are the same) */
     background-image: url("../images/DP.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 50%; /* Makes the image round */
+    border-radius: 50%;
+    /* Makes the image round */
     box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 768px) { /* Tablet and small screens */
+@media (max-width: 768px) {
+
+    /* Tablet and small screens */
     .leftAbout {
-        width: 50%; /* Make the image container wider on smaller screens */
+        width: 50%;
+        /* Make the image container wider on smaller screens */
     }
 }
 
-@media (max-width: 480px) { /* Mobile screens */
+@media (max-width: 480px) {
+
+    /* Mobile screens */
     .leftAbout {
-        width: 80%; /* Make the image container wider on mobile */
+        width: 80%;
+        /* Make the image container wider on mobile */
     }
 }
 
 .socialMedia {
     display: flex;
     justify-content: center;
-    margin-top: 1rem; /* Space between the photo and the icons */
+    margin-top: 1rem;
+    /* Space between the photo and the icons */
 }
 
 .socialIcon {
     width: 40px;
     height: 40px;
-    margin: 0 1rem; /* Space between icons */
-    transition: transform 0.3s; /* Smooth hover effect */
+    margin: 0 1rem;
+    /* Space between icons */
+    transition: transform 0.3s;
+    /* Smooth hover effect */
+    
 }
 
 .socialIcon:hover {
-    transform: scale(1.1); /* Enlarge the icon on hover */
+    transform: scale(1.1);
+    /* Enlarge the icon on hover */
 }
-
-
-
-
 
 
 /* Footer */
 footer {
     height: 7.5rem;
     width: 100%;
-    background-color:#f3f3f3;
+    background-color: #f3f3f3;
     text-align: center;
-    color: black;
+    color: #222222;
     font-size: 1.8rem;
     font-weight: 400;
     padding-top: 2.5rem;
@@ -442,9 +468,11 @@ footer {
     html {
         font-size: 70%;
     }
+
     nav .left img {
         width: 6rem;
     }
+
     .leftAbout {
         width: 20%;
 
@@ -471,7 +499,7 @@ footer {
     /*Services*/
 
     .services {
-        margin:6rem 23rem;
+        margin: 6rem 23rem;
     }
 
 
@@ -482,30 +510,34 @@ footer {
     html {
         font-size: 55%;
     }
+
     nav .left img {
         width: 8rem;
     }
+
     .skills {
         margin: 0rem 10rem;
     }
+
     .skills .box {
         flex: 1 1 30%;
         margin: 5rem 3rem;
         border-radius: 40px;
     }
-    
-    .skills .box img{
+
+    .skills .box img {
         border-radius: 20px;
-    
+
     }
-    
+
     .services .box {
-        
+
         flex: 1 1 20%;
-    
-        
-    
+
+
+
     }
+
     .leftAbout {
         width: 30%;
 
@@ -516,191 +548,217 @@ footer {
         width: 55%;
     }
 
-    
-    
+
+
     .socialIcon {
-        width: 25px; /* Adjust size as needed */
-        height: 25px; /* Adjust size as needed */
+        width: 25px;
+        /* Adjust size as needed */
+        height: 25px;
+        /* Adjust size as needed */
     }
-    
-    
+
+
 }
 
 @media screen and (min-width: 913px) and (max-width: 1024px) {
     html {
         font-size: 45%;
     }
+
     nav .left img {
         width: 7rem;
     }
+
     .skills {
         margin: 0rem 10rem;
     }
+
     .skills .box {
         flex: 1 1 30%;
         margin: 5rem 3rem;
-    
+
     }
-    .skills .box img{
+
+    .skills .box img {
         border-radius: 20px;
-    
+
     }
-    
+
     .services .box {
-        
+
         flex: 1 1 20%;
-    
-        
-    
+
+
+
     }
+
     .rightAbout {
-        
+
         width: 50%;
         margin-top: -1rem;
     }
-    
+
     .leftAbout {
         width: 30%;
-    
+
     }
-    
-    
+
+
     .socialIcon {
-        width: 25px; /* Adjust size as needed */
-        height: 25px; /* Adjust size as needed */
+        width: 25px;
+        /* Adjust size as needed */
+        height: 25px;
+        /* Adjust size as needed */
     }
-   
-    
-    
+
+
+
 }
 
 @media screen and (min-width: 821px) and (max-width: 912px) {
     html {
         font-size: 40%;
     }
+
     nav .left img {
         width: 7rem;
     }
-    .skills .box img{
+
+    .skills .box img {
         border-radius: 20px;
-    
+
     }
+
     .rightAbout {
-        
+
         width: 50%;
         margin-top: -1rem;
     }
-    
+
     .leftAbout {
         width: 27%;
 
-    
+
     }
-    
-    
+
+
     .socialIcon {
-        width: 20px; /* Adjust size as needed */
-        height: 20px; /* Adjust size as needed */
+        width: 20px;
+        /* Adjust size as needed */
+        height: 20px;
+        /* Adjust size as needed */
     }
-   
+
 }
 
 @media screen and (min-width: 541px) and (max-width: 820px) {
     html {
         font-size: 30%;
     }
+
     nav .left img {
         width: 6rem;
     }
+
     .skills {
         margin: 0rem 10rem;
     }
+
     .skills .box {
         flex: 1 1 30%;
         margin: 5rem 3rem;
         padding: 15px;
         border-radius: 25px;
     }
-    
-    .skills .box img{
+
+    .skills .box img {
         border-radius: 10px;
-    
+
     }
-    
+
     .services .box {
-        
+
         flex: 1 1 20%;
-    
-        
-    
+
+
+
     }
+
     .rightAbout {
-        
+
         width: 50%;
         margin-top: -1rem;
     }
-    
+
     .leftAbout {
         width: 25%;
         height: auto;
-    
+
     }
-    
-    
+
+
     .socialIcon {
-        width: 15px; /* Adjust size as needed */
-        height: 15px; /* Adjust size as needed */
+        width: 15px;
+        /* Adjust size as needed */
+        height: 15px;
+        /* Adjust size as needed */
     }
-    
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 540px) {
     html {
         font-size: 24%;
     }
+
     nav .left img {
         width: 5rem;
     }
+
     .skills {
         margin: 0rem 10rem;
     }
+
     .skills .box {
         flex: 1 1 30%;
         margin: 5rem 3rem;
         padding: 15px;
         border-radius: 25px;
     }
-    
-    .skills .box img{
+
+    .skills .box img {
         border-radius: 10px;
-    
+
     }
-    
+
     .services .box {
-        
+
         flex: 1 1 20%;
-    
-        
-    
+
+
+
     }
+
     .rightAbout {
-        
+
         width: 57%;
         margin-top: -1rem;
     }
-    
+
     .leftAbout {
         width: 26%;
         height: auto;
-    
+
     }
-    
-    
+
+
     .socialIcon {
-        width: 12px; /* Adjust size as needed */
-        height: 12px; /* Adjust size as needed */
+        width: 12px;
+        /* Adjust size as needed */
+        height: 12px;
+        /* Adjust size as needed */
     }
-    
+
 }
 
 
@@ -710,6 +768,7 @@ footer {
     html {
         font-size: 27%;
     }
+
     nav .left img {
         width: 9.5rem;
     }
@@ -736,10 +795,10 @@ footer {
     .menu {
         position: absolute;
         top: 100%;
-        width: 70%;
+        width: 60%;
         height: 80rem;
         right: -100%;
-        background-color: #f6f6f6;;
+        background-color: #f6f6f6;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -752,21 +811,22 @@ footer {
     .menu a {
         display: block;
         margin: 1.3rem 0;
-        transition: all .30s ease;
+        transition: all 0.6s ease;
         font-size: 4rem;
         transition: 0.3s;
     }
 
     nav ul li a:hover {
-        font-size: 6rem;
+        font-size: 4.07rem;
+        margin: 0.1rem;
 
     }
 
     nav .right .btn {
-        padding: 3.1rem 5.3rem;
-        border-radius: 3.5rem;
-        font-size: 4.5rem;
-        letter-spacing: 0.5rem;
+        padding: 2rem 4.5rem;
+        border-radius: 4.3rem;
+        font-size: 4rem;
+        letter-spacing: 0rem;
 
 
     }
@@ -791,125 +851,132 @@ footer {
 
         margin: 20.0rem 0 6.0rem 0;
     }
-    
+
     .firstSection>div {
         width: 80%;
     }
-    
-    
+
+
     .leftsection {
         font-size: 3rem;
-    
-    }
-    
-    .leftsection div {
-        font-size:5.5rem;
 
     }
+
+    .leftsection div {
+        font-size: 5.5rem;
+
+    }
+
     .leftsection p {
         font-size: 3.6rem;
-       
-    }
-    
 
-    
+    }
+
+
+
     .leftsection #reverse {
 
         font-size: 3rem;
         border-radius: 2.5rem;
-        
+
     }
-    
+
 
     #SLink {
         border-radius: 1.7rem;
         margin-right: 1.5rem;
         height: 6rem;
         width: 50%;
-        font-size:1.6rem;
-       
+        font-size: 1.6rem;
+
     }
-    
-    
+
+
 
     /*About Section*/
     .subHeading {
         font-size: 3.5rem;
         letter-spacing: 2.5rem;
-      
+
     }
-    .mainHead{
+
+    .mainHead {
         font-size: 6.5rem;
-    
+
     }
-    
-    .subHead{
+
+    .subHead {
         font-size: 3.6rem;
     }
+
     .aboutMe {
         display: flex;
         flex-direction: column;
     }
-    h1{
-    margin-bottom: 2rem;
+
+    h1 {
+        margin-bottom: 2rem;
     }
+
     .rightAbout {
         font-size: 3.5rem;
         width: 90%;
-        margin:5rem;
+        margin: 5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: justify;
-        hyphens: auto;
-        -webkit-hyphens: auto;
-        word-spacing: -0.05em;
+        word-wrap: break-word;
     }
 
     .leftAbout {
         width: 50%;
-        
+
     }
+
     .socialIcon {
         margin-top: 2rem;
-        width: 25px; /* Adjust size as needed */
-        height: 25px; /* Adjust size as needed */
+        width: 25px;
+        /* Adjust size as needed */
+        height: 25px;
+        /* Adjust size as needed */
     }
 
     /*Skills*/
 
-    
+
     .skills .box {
-    margin-top: 5rem;
+        margin-top: 5rem;
         border-radius: 8rem;
         height: auto
-    
     }
-    
-    
-    .skills .box img{
-        
+
+
+    .skills .box img {
+
         border-radius: 20px;
-    
+
     }
-    .skills .box h1{
-        
+
+    .skills .box h1 {
+
         font-size: 4rem;
-    
+
     }
-    .skills p{
-        
-        font-size:3rem;
+
+    .skills p {
+
+        font-size: 3rem;
     }
-    
-    .skills .live{
+
+    .skills .live {
         margin-top: 1.5rem;
         font-size: 3rem;
 
     }
-    
-    .skills .live:hover{
+
+    .skills .live:hover {
         font-size: 3.1rem;
         transition: 0.5s ease;
     }
@@ -918,28 +985,29 @@ footer {
     /*Services*/
 
     .services .box {
-        
+
         flex: 1 1 45%;
 
         border-radius: 6rem;
         padding: 3rem 1rem;
- 
-        
-    
+
+
+
     }
-    .services video{
+
+    .services video {
         border-radius: 5rem;
-       
+
     }
-    
-    
+
+
     .services .box h1 {
         font-size: 4rem;
 
-       
+
     }
 
-    
+
     footer {
         height: 10rem;
         display: flex;
@@ -958,245 +1026,255 @@ footer {
 @media screen and (min-width: 280px) and (max-width: 369px) {
     html {
         font-size: 20%;
-        
-        }
-        nav .left img {
-            width: 9.5rem;
-        }
-    
-    
-        /*Responsive menu*/
-        #menu-icon {
-            display: block;
-            margin-right: 5rem;
-            font-size: 7rem;
-        }
-    
-        .left {
-            font-size: 6rem;
-            margin-left: 5rem;
-        }
-    
-        nav {
-            height: 13rem;
-            justify-content: space-between;
-    
-        }
-    
-        .menu {
-            position: absolute;
-            top: 100%;
-            width: 70%;
-            height: 80rem;
-            right: -100%;
-            background-color: #f6f6f6;;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transition: all .50s ease;
-            border-bottom-left-radius: 7rem;
-            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-        }
-    
-        .menu a {
-            display: block;
-            margin: 1.3rem 0;
-            transition: all .30s ease;
-            font-size: 4rem;
-            transition: 0.3s;
-        }
-    
-        nav ul li a:hover {
-            font-size: 6rem;
-    
-        }
-    
-        nav .right .btn {
-            padding: 3.1rem 5.3rem;
-            border-radius: 3.5rem;
-            font-size: 4.5rem;
-            letter-spacing: 0.5rem;
-    
-    
-        }
-    
-        .right .sizes {
-            font-size: 6rem;
-        }
-    
-        .leftsection .sizes {
-            font-size: 6rem;
-            position: relative;
-            top: .4rem;
-        }
-    
-        .menu.open {
-            right: 0%;
-        }
-    
-    
-        /* First Section */
-        .firstSection {
-    
-            margin: 20.0rem 0 6.0rem 0;
-        }
-        
-        .firstSection>div {
-            width: 80%;
-        }
-        
-        
-        .leftsection {
-            font-size: 3rem;
-        
-        }
-        
-        .leftsection div {
-            font-size:5.5rem;
-    
-        }
-        .leftsection p {
-            font-size: 3.6rem;
-           
-        }
-        
-    
-        
-        .leftsection #reverse {
-    
-            font-size: 3rem;
-            border-radius: 2.5rem;
-            
-        }
-        
-    
-        #SLink {
-            border-radius: 1.7rem;
-            margin-right: 1.5rem;
-            height: 6rem;
-            width: 50%;
-            font-size:1.6rem;
-           
-        }
-        
-        
-    
-        /*About Section*/
-        .subHeading {
-            font-size: 3.5rem;
-            letter-spacing: 2.5rem;
-          
-        }
-        .mainHead{
-            font-size: 6.5rem;
-        
-        }
-        
-        .subHead{
-            font-size: 3.6rem;
-        }
-        .aboutMe {
-            display: flex;
-            flex-direction: column;
-        }
-        h1{
+
+    }
+
+    nav .left img {
+        width: 9.5rem;
+    }
+
+
+    /*Responsive menu*/
+    #menu-icon {
+        display: block;
+        margin-right: 5rem;
+        font-size: 7rem;
+    }
+
+    .left {
+        font-size: 6rem;
+        margin-left: 5rem;
+    }
+
+    nav {
+        height: 13rem;
+        justify-content: space-between;
+
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        width: 55%;
+        height: 80rem;
+        right: -100%;
+        background-color: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all .50s ease;
+        border-bottom-left-radius: 7rem;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .menu a {
+        display: block;
+        margin: 1.3rem 0;
+        transition: all 0.6s ease;
+        font-size: 3.8rem;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        font-size: 3.85rem;
+        margin: 0rem;
+
+    }
+
+    nav .right .btn {
+        padding: 2rem 4.5rem;
+        border-radius: 3.3rem;
+        font-size: 4rem;
+        letter-spacing: 0rem;
+
+
+    }
+
+    .right .sizes {
+        font-size: 6rem;
+    }
+
+    .leftsection .sizes {
+        font-size: 6rem;
+        position: relative;
+        top: .4rem;
+    }
+
+    .menu.open {
+        right: 0%;
+    }
+
+
+    /* First Section */
+    .firstSection {
+
+        margin: 20.0rem 0 6.0rem 0;
+    }
+
+    .firstSection>div {
+        width: 80%;
+    }
+
+
+    .leftsection {
+        font-size: 3rem;
+
+    }
+
+    .leftsection div {
+        font-size: 5.5rem;
+
+    }
+
+    .leftsection p {
+        font-size: 3.6rem;
+
+    }
+
+
+
+    .leftsection #reverse {
+
+        font-size: 3rem;
+        border-radius: 2.5rem;
+
+    }
+
+
+    #SLink {
+        border-radius: 1.7rem;
+        margin-right: 1.5rem;
+        height: 6rem;
+        width: 50%;
+        font-size: 1.6rem;
+
+    }
+
+
+
+    /*About Section*/
+    .subHeading {
+        font-size: 3.5rem;
+        letter-spacing: 2.5rem;
+
+    }
+
+    .mainHead {
+        font-size: 6.5rem;
+
+    }
+
+    .subHead {
+        font-size: 3.6rem;
+    }
+
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
         margin-bottom: 2rem;
-        }
-        .rightAbout {
-            font-size: 3.5rem;
-            width: 90%;
-            margin:5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: justify;
-            hyphens: auto;
-            -webkit-hyphens: auto;
-            word-spacing: -0.05em;
-        }
-    
-        .leftAbout {
-            width: 50%;
-            
-        }
-        .socialIcon {
-            margin-top: 2rem;
-            width: 25px; /* Adjust size as needed */
-            height: 25px; /* Adjust size as needed */
-        }
-    
-        /*Skills*/
-    
-        
-        .skills .box {
+    }
+
+    .rightAbout {
+        font-size: 3.5rem;
+        width: 90%;
+        margin: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        word-wrap: break-word;
+    }
+
+    .leftAbout {
+        width: 50%;
+
+    }
+
+    .socialIcon {
+        margin-top: 2rem;
+        width: 25px;
+        /* Adjust size as needed */
+        height: 25px;
+        /* Adjust size as needed */
+    }
+
+    /*Skills*/
+
+
+    .skills .box {
         margin-top: 5rem;
-            border-radius: 8rem;
-            height: auto
-        
-        }
-        
-        
-        .skills .box img{
-            
-            border-radius: 20px;
-        
-        }
-        .skills .box h1{
-            
-            font-size: 4rem;
-        
-        }
-        .skills p{
-            
-            font-size:3rem;
-        }
-        
-        .skills .live{
-            margin-top: 1.5rem;
-            font-size: 3rem;
-    
-        }
-        
-        .skills .live:hover{
-            font-size: 3.1rem;
-            transition: 0.5s ease;
-        }
-    
-    
-        /*Services*/
-    
-        .services .box {
-            
-            flex: 1 1 45%;
-    
-            border-radius: 6rem;
-            padding: 3rem 1rem;
-     
-            
-        
-        }
-        .services video{
-            border-radius: 5rem;
-           
-        }
-        
-        
-        .services .box h1 {
-            font-size: 4rem;
-    
-           
-        }
-    
-        
-        footer {
-            height: 10rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2.5rem;
-        }
-    
-    
+        border-radius: 8rem;
+        height: auto
+    }
+
+
+    .skills .box img {
+
+        border-radius: 20px;
+
+    }
+
+    .skills .box h1 {
+
+        font-size: 4rem;
+
+    }
+
+    .skills p {
+
+        font-size: 3rem;
+    }
+
+    .skills .live {
+        margin-top: 1.5rem;
+        font-size: 3rem;
+
+    }
+
+    .skills .live:hover {
+        font-size: 3.1rem;
+        transition: 0.5s ease;
+    }
+
+
+    /*Services*/
+
+    .services .box {
+
+        flex: 1 1 45%;
+
+        border-radius: 6rem;
+        padding: 3rem 1rem;
+
+
+
+    }
+
+    .services video {
+        border-radius: 5rem;
+
+    }
+
+
+    .services .box h1 {
+        font-size: 4rem;
+
+
+    }
+
+
+    footer {
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+    }
+
+
 }
