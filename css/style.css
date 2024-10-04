@@ -796,7 +796,7 @@ footer {
         position: absolute;
         top: 100%;
         width: 60%;
-        height: 80rem;
+        height: 60rem;
         right: -100%;
         background-color: #f6f6f6;
         display: flex;
@@ -810,7 +810,7 @@ footer {
 
     .menu a {
         display: block;
-        margin: 1.3rem 0;
+        margin: auto;
         transition: all 0.6s ease;
         font-size: 4rem;
         transition: 0.3s;
@@ -818,16 +818,15 @@ footer {
 
     nav ul li a:hover {
         font-size: 4.07rem;
-        margin: 0.1rem;
-
+        margin: auto;
     }
 
     nav .right .btn {
         padding: 2rem 4.5rem;
-        border-radius: 4.3rem;
+        border-radius: 3rem;
         font-size: 4rem;
         letter-spacing: 0rem;
-
+        margin: 0rem;
 
     }
 
@@ -1056,7 +1055,7 @@ footer {
         position: absolute;
         top: 100%;
         width: 55%;
-        height: 80rem;
+        height: 55rem;
         right: -100%;
         background-color: #f6f6f6;
         display: flex;
@@ -1070,24 +1069,24 @@ footer {
 
     .menu a {
         display: block;
-        margin: 1.3rem 0;
         transition: all 0.6s ease;
         font-size: 3.8rem;
         transition: 0.3s;
+        margin: auto;
     }
 
     nav ul li a:hover {
-        font-size: 3.85rem;
+        font-size: 3.9rem;
         margin: 0rem;
 
     }
 
     nav .right .btn {
         padding: 2rem 4.5rem;
-        border-radius: 3.3rem;
+        border-radius: 3rem;
         font-size: 4rem;
         letter-spacing: 0rem;
-
+        margin: 0rem;
 
     }
 
