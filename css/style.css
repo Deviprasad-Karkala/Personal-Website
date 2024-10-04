@@ -459,7 +459,7 @@ footer {
     font-weight: 400;
     padding-top: 2.5rem;
     letter-spacing: 0rem;
-
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
 
 /* Media Query*/
