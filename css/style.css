@@ -108,7 +108,6 @@ nav .right .btn:hover {
     color: #424242;
     border: .2rem solid #636a7E;
     cursor: pointer;
-    font-weight: 500;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 5.0rem 10.0rem -2.0rem, rgba(0, 0, 0, 0.3) 0rem 3.0rem 6.0rem -3.0rem, rgba(10, 37, 64, 0.35) 0rem -.2rem .6rem 0rem inset;
 }
 
@@ -332,6 +331,7 @@ nav .right .btn:hover {
     width: 90%;
     border-radius: 2.5rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
 }
 
 
@@ -884,13 +884,15 @@ footer {
     #SLink {
         border-radius: 1.7rem;
         margin-right: 1.5rem;
-        height: 6rem;
-        width: 50%;
-        font-size: 1.6rem;
+        height: 6.6rem;
+        width: 58%;
+        font-size: 2rem;
 
     }
 
-
+    .hide-on-mobile {
+        display: none;
+      }
 
     /*About Section*/
     .subHeading {
@@ -1144,13 +1146,15 @@ footer {
     #SLink {
         border-radius: 1.7rem;
         margin-right: 1.5rem;
-        height: 6rem;
-        width: 50%;
-        font-size: 1.6rem;
+        height: 6.6rem;
+        width: 58%;
+        font-size: 1.8rem;
 
     }
 
-
+    .hide-on-mobile {
+        display: none;
+      }
 
     /*About Section*/
     .subHeading {
