@@ -766,11 +766,11 @@ footer {
 
 @media screen and (min-width: 370px) and (max-width: 480px) {
     html {
-        font-size: 27%;
+        font-size: 40%;
     }
 
     nav .left img {
-        width: 9.5rem;
+        width: 8rem;
     }
 
 
@@ -778,7 +778,7 @@ footer {
     #menu-icon {
         display: block;
         margin-right: 5rem;
-        font-size: 7rem;
+        font-size: 6rem;
     }
 
     .left {
@@ -787,7 +787,7 @@ footer {
     }
 
     nav {
-        height: 13rem;
+        height: 12rem;
         justify-content: space-between;
 
     }
@@ -795,8 +795,8 @@ footer {
     .menu {
         position: absolute;
         top: 100%;
-        width: 60%;
-        height: 60rem;
+        width: 70%;
+        height: 45rem;
         right: -100%;
         background-color: #f6f6f6;
         display: flex;
@@ -804,7 +804,7 @@ footer {
         justify-content: center;
         align-items: center;
         transition: all .50s ease;
-        border-bottom-left-radius: 7rem;
+        border-bottom-left-radius: 5rem;
         box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
 
@@ -812,33 +812,25 @@ footer {
         display: block;
         margin: auto;
         transition: all 0.6s ease;
-        font-size: 4rem;
+        font-size: 3rem;
         transition: 0.3s;
     }
 
     nav ul li a:hover {
-        font-size: 4.07rem;
+        font-size: 3.07rem;
         margin: auto;
     }
 
     nav .right .btn {
-        padding: 2rem 4.5rem;
-        border-radius: 3rem;
-        font-size: 4rem;
+        padding: 1.5rem 3.5rem;
+        border-radius: 2rem;
+        font-size: 3rem;
+        font-weight: 400;
         letter-spacing: 0rem;
         margin: 0rem;
 
     }
 
-    .right .sizes {
-        font-size: 6rem;
-    }
-
-    .leftsection .sizes {
-        font-size: 6rem;
-        position: relative;
-        top: .4rem;
-    }
 
     .menu.open {
         right: 0%;
@@ -852,7 +844,8 @@ footer {
     }
 
     .firstSection>div {
-        width: 80%;
+        width: 90%;
+
     }
 
 
@@ -862,12 +855,12 @@ footer {
     }
 
     .leftsection div {
-        font-size: 5.5rem;
-
+        font-size: 6.5rem;
+        line-height: 7rem;
     }
 
     .leftsection p {
-        font-size: 3.6rem;
+        font-size: 3rem;
 
     }
 
@@ -876,53 +869,62 @@ footer {
     .leftsection #reverse {
 
         font-size: 3rem;
-        border-radius: 2.5rem;
+        border-radius: 1.7rem;
+        padding: 1.7rem 4rem;
 
     }
 
 
     #SLink {
-        border-radius: 1.7rem;
-        margin-right: 1.5rem;
-        height: 6.6rem;
-        width: 58%;
+        border-radius: 1.3rem;
+        margin-bottom: 1.5rem;
+        height: 7rem;
+        width: 90%;
         font-size: 2rem;
 
     }
 
     .hide-on-mobile {
         display: none;
-      }
+    }
 
     /*About Section*/
     .subHeading {
-        font-size: 3.5rem;
-        letter-spacing: 2.5rem;
-
+        font-size: 3rem;
+        letter-spacing: 1.7rem;
+        margin-bottom: 1rem;
     }
 
     .mainHead {
-        font-size: 6.5rem;
-
+        font-size: 6rem;
+        line-height: 6rem;
+        margin-bottom: 1rem;
     }
 
     .subHead {
-        font-size: 3.6rem;
+        font-size: 2.7rem;
     }
 
     .aboutMe {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
     }
 
     h1 {
-        margin-bottom: 2rem;
+        margin: 2rem 0rem;
+        font-size: 4.8rem;
+        font-weight: 900;
+        text-align: left;
     }
 
     .rightAbout {
-        font-size: 3.5rem;
+        margin: 0rem 0rem 3rem 0rem;
+        font-size: 2.7rem;
         width: 90%;
-        margin: 5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -932,8 +934,8 @@ footer {
     }
 
     .leftAbout {
-        width: 50%;
-
+        width: 60%;
+        margin: 3rem 0rem;
     }
 
     .socialIcon {
@@ -946,65 +948,73 @@ footer {
 
     /*Skills*/
 
+    .skills {
+        width: 100%;
+    }
 
     .skills .box {
         margin-top: 5rem;
-        border-radius: 8rem;
-        height: auto
+        border-radius: 4rem;
+        height: auto;
+        padding: 2.5rem;
     }
 
 
     .skills .box img {
 
-        border-radius: 20px;
+        border-radius: 2rem;
 
     }
 
     .skills .box h1 {
 
-        font-size: 4rem;
+        font-size: 3.5rem;
 
     }
 
     .skills p {
 
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
 
     .skills .live {
         margin-top: 1.5rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
 
     }
 
     .skills .live:hover {
-        font-size: 3.1rem;
+        font-size: 2.55rem;
         transition: 0.5s ease;
     }
 
 
     /*Services*/
+    .services {
+        margin: 2rem 7rem;
+    }
 
     .services .box {
 
-        flex: 1 1 45%;
-
-        border-radius: 6rem;
+        flex: 1 1 100%;
+        margin: 2rem 0rem;
+        border-radius: 3rem;
         padding: 3rem 1rem;
+
 
 
 
     }
 
     .services video {
-        border-radius: 5rem;
+        border-radius: 2rem;
 
     }
 
 
     .services .box h1 {
-        font-size: 4rem;
-
+        font-size: 3rem;
+        margin: 1.5rem 0 0 0;
 
     }
 
@@ -1014,7 +1024,8 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2.5rem;
+        font-size: 2rem;
+        padding: 0;
     }
 
 
@@ -1026,12 +1037,12 @@ footer {
 
 @media screen and (min-width: 280px) and (max-width: 369px) {
     html {
-        font-size: 20%;
+        font-size: 35%;
 
     }
 
     nav .left img {
-        width: 9.5rem;
+        width: 7.5rem;
     }
 
 
@@ -1039,7 +1050,7 @@ footer {
     #menu-icon {
         display: block;
         margin-right: 5rem;
-        font-size: 7rem;
+        font-size: 6.5rem;
     }
 
     .left {
@@ -1048,7 +1059,7 @@ footer {
     }
 
     nav {
-        height: 13rem;
+        height: 11rem;
         justify-content: space-between;
 
     }
@@ -1056,8 +1067,8 @@ footer {
     .menu {
         position: absolute;
         top: 100%;
-        width: 55%;
-        height: 55rem;
+        width: 70%;
+        height: 45rem;
         right: -100%;
         background-color: #f6f6f6;
         display: flex;
@@ -1065,28 +1076,29 @@ footer {
         justify-content: center;
         align-items: center;
         transition: all .50s ease;
-        border-bottom-left-radius: 7rem;
+        border-bottom-left-radius: 4.5rem;
         box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
 
     .menu a {
         display: block;
         transition: all 0.6s ease;
-        font-size: 3.8rem;
+        font-size: 3rem;
         transition: 0.3s;
         margin: auto;
     }
 
     nav ul li a:hover {
-        font-size: 3.9rem;
+        font-size: 3.07rem;
         margin: 0rem;
 
     }
 
     nav .right .btn {
-        padding: 2rem 4.5rem;
-        border-radius: 3rem;
-        font-size: 4rem;
+        padding: 1.5rem 3.5rem;
+        border-radius: 2rem;
+        font-size: 3rem;
+        font-weight: 400;
         letter-spacing: 0rem;
         margin: 0rem;
 
@@ -1114,7 +1126,7 @@ footer {
     }
 
     .firstSection>div {
-        width: 80%;
+        width: 90%;
     }
 
 
@@ -1125,11 +1137,11 @@ footer {
 
     .leftsection div {
         font-size: 5.5rem;
-
+        line-height: 7rem;
     }
 
     .leftsection p {
-        font-size: 3.6rem;
+        font-size: 2.7rem;
 
     }
 
@@ -1138,53 +1150,65 @@ footer {
     .leftsection #reverse {
 
         font-size: 3rem;
-        border-radius: 2.5rem;
+        border-radius: 1.7rem;
+        padding: 1.5rem 3.5rem;
 
     }
 
 
     #SLink {
-        border-radius: 1.7rem;
+        border-radius: 1.3rem;
         margin-right: 1.5rem;
-        height: 6.6rem;
-        width: 58%;
-        font-size: 1.8rem;
+        height: 7rem;
+        width: 90%;
+        font-size: 2rem;
+        margin-bottom: 1rem;
 
     }
 
     .hide-on-mobile {
         display: none;
-      }
+    }
 
     /*About Section*/
     .subHeading {
-        font-size: 3.5rem;
-        letter-spacing: 2.5rem;
+        font-size: 2.6rem;
+        letter-spacing: 1.7rem;
+        margin-bottom: 1rem;
 
     }
 
     .mainHead {
-        font-size: 6.5rem;
+        font-size: 5.5rem;
+        line-height: 6rem;
+        margin-bottom: 1rem;
 
     }
 
     .subHead {
-        font-size: 3.6rem;
+        font-size: 2.5rem;
     }
 
     .aboutMe {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
     }
 
     h1 {
-        margin-bottom: 2rem;
+        margin: 2rem 0rem;
+        font-size: 4.3rem;
+        font-weight: 900;
+        text-align: left;
+
     }
 
     .rightAbout {
-        font-size: 3.5rem;
+        margin: 0rem 0rem 3rem 0rem;
+        font-size: 2.7rem;
         width: 90%;
-        margin: 5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1194,7 +1218,8 @@ footer {
     }
 
     .leftAbout {
-        width: 50%;
+        width: 60%;
+        margin: 3rem 0rem;
 
     }
 
@@ -1207,51 +1232,58 @@ footer {
     }
 
     /*Skills*/
-
+    .skills {
+        width: 100%;
+    }
 
     .skills .box {
-        margin-top: 5rem;
-        border-radius: 8rem;
-        height: auto
+        flex: 1 1 100%;
+        margin: 5rem 2rem;
+        border-radius: 4rem;
+        height: auto;
+        padding: 2.5rem;
     }
 
 
     .skills .box img {
 
-        border-radius: 20px;
+        border-radius: 2rem;
 
     }
 
     .skills .box h1 {
 
-        font-size: 4rem;
+        font-size: 3.3rem;
 
     }
 
     .skills p {
 
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
 
     .skills .live {
         margin-top: 1.5rem;
-        font-size: 3rem;
+        font-size: 2.4rem;
 
     }
 
     .skills .live:hover {
-        font-size: 3.1rem;
+        font-size: 2.45rem;
         transition: 0.5s ease;
     }
 
 
     /*Services*/
+    .services {
+        margin: 2rem 5rem;
+    }
 
     .services .box {
 
-        flex: 1 1 45%;
-
-        border-radius: 6rem;
+        flex: 1 1 100%;
+        margin: 2rem 0rem;
+        border-radius: 3rem;
         padding: 3rem 1rem;
 
 
@@ -1259,13 +1291,14 @@ footer {
     }
 
     .services video {
-        border-radius: 5rem;
+        border-radius: 2rem;
 
     }
 
 
     .services .box h1 {
-        font-size: 4rem;
+        font-size: 3rem;
+        margin: 1.5rem 0 0 0;
 
 
     }
@@ -1276,7 +1309,8 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2.5rem;
+        font-size: 2rem;
+        padding: 0;
     }
 
 
