@@ -149,11 +149,18 @@ nav .right .btn:hover {
     letter-spacing: 1.6rem;
 }
 
+
+
 .leftsection div {
     font-size: 4.3rem;
     font-weight: 900;
     color: #222222;
     letter-spacing: -0.1rem;
+}
+span{
+    color: #1f822e;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .leftsection p {
@@ -162,6 +169,7 @@ nav .right .btn:hover {
     color: #222222;
     letter-spacing: 0rem;
 }
+
 
 .leftsection .buttons {
     padding: 0.6rem 0;
@@ -246,18 +254,15 @@ nav .right .btn:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex: 1 1 40%;
     margin: 3rem 6.4rem;
     border: .1rem solid rgba(49, 49, 49, 0.1);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background-color: #f3f3f3;
+    background-color: #222222;
     border-radius: 4rem;
-    padding: 5rem;
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: #424242;
-    height: 40rem;
+    padding:3rem;
+    color: #f3f3f3;
 
 }
 
@@ -271,28 +276,29 @@ nav .right .btn:hover {
 }
 
 .skills .box h1 {
-
+    margin: 1rem 0rem;
     font-size: 2rem;
     font-weight: 800;
     letter-spacing: 0rem;
 }
 
 .skills p {
-
+    margin-bottom: 1rem;
+    text-align: left;
     letter-spacing: 0rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .skills .live {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
-    color: #1b1b1b;
+    color: #f3f3f3;
     text-decoration: underline
 }
 
 .skills .live:hover {
-    font-size: 1.54rem;
+    font-size: 1.74rem;
     transition: 0.5s ease;
 }
 
@@ -397,7 +403,7 @@ nav .right .btn:hover {
     /* Take full width of the container */
     aspect-ratio: 1 / 1;
     /* Maintain a 1:1 aspect ratio (width and height are the same) */
-    background-image: url("../images/DP.png");
+    background-image: url("../images/DP.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
