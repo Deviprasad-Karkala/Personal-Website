@@ -184,7 +184,7 @@
   jsonLdScript.text = JSON.stringify(schemaData);
   document.head.appendChild(jsonLdScript);
 
-  // Function to save the email to KV storage via the /saveEmail endpoint
+  // Function to save the email to KV storage via the correct endpoint
   async function saveEmail() {
     const emailInput = document.getElementById('SLink'); // Get email input field
     const email = emailInput.value.trim(); // Trim whitespace
@@ -196,7 +196,7 @@
 
     try {
       // Send email to backend using fetch
-      const response = await fetch('/saveEmail', {
+      const response = await fetch('https://deviprasad.megavault.in/saveEmail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
