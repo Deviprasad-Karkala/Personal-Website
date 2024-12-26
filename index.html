@@ -60,9 +60,8 @@
           grab your Aesthetic Notion template now.
         </p>
         <div class="buttons">
-          <input type="text" placeholder="Enter your email" id="SLink">
-          <a id="reverse" target="_blank" class="btn" href="">
-            Download Now</a>
+          <input type="text" placeholder="Enter your email" id="SLink" />
+          <a id="reverse" target="_blank" class="btn" href="javascript:void(0);" onclick="saveEmail()">Subscribe</a>
         </div>
     </section>
 
@@ -160,27 +159,66 @@
   <script type="text/javascript" src="./js/script.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script>
-    var typed = new Typed('#element', {
-      strings: ['Graphic Design', 'Video Editing', 'Front-End Development'],
-      typeSpeed: 50,
-      loop: true
-    });
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-      "@type": "Person",
-      "name": "Deviprasad",
-      "url": "https://www.deviprasad.xyz",
-      "sameAs": [
+  // Initialize Typed.js for animated text
+  var typed = new Typed('#element', {
+    strings: ['Graphic Design', 'Video Editing', 'Front-End Development'],
+    typeSpeed: 50,
+    loop: true
+  });
+
+  // JSON-LD structured data for schema.org
+  const schemaData = {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Deviprasad",
+    "url": "https://www.deviprasad.xyz",
+    "sameAs": [
       "https://www.linkedin.com/in/devipra5ad/",
       "https://www.instagram.com/devipra5ad"
-      ]
-}
-  </script>
+    ]
+  };
 
+  // Inject the JSON-LD script dynamically into the DOM
+  const jsonLdScript = document.createElement('script');
+  jsonLdScript.type = 'application/ld+json';
+  jsonLdScript.text = JSON.stringify(schemaData);
+  document.head.appendChild(jsonLdScript);
 
+  // Function to save the email to KV storage via the /saveEmail endpoint
+  async function saveEmail() {
+    const emailInput = document.getElementById('SLink'); // Get email input field
+    const email = emailInput.value.trim(); // Trim whitespace
 
-  </script>
+    if (!email) { // Validate input
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    try {
+      // Send email to backend using fetch
+      const response = await fetch('/saveEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }), // Payload to backend
+      });
+
+      // Handle response
+      if (response.ok) {
+        alert('Your email has been saved successfully!');
+        emailInput.value = ''; // Clear input on success
+      } else {
+        alert('Failed to save email. Please try again later.');
+      }
+    } catch (error) {
+      // Log and alert on error
+      console.error('Error saving email:', error);
+      alert('An error occurred. Please try again later.');
+    }
+  }
+</script>
+
 </body>
 
 </html>
