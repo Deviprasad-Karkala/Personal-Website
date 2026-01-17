@@ -607,6 +607,182 @@ footer {
   }
 }
 
+@media (max-width: 480px) {
+  nav .left img {
+    width: 3rem;
+  }
+
+  /*Responsive menu*/
+  #menu-icon {
+    display: block;
+    margin-right: 2rem;
+    font-size: 2rem;
+  }
+
+  .left {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+  }
+
+  nav {
+    height: 4rem;
+    justify-content: space-between;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    width: 65%;
+    height: 17rem;
+    right: -100%;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    border-bottom-left-radius: 2rem;
+    gap: 1.5rem;
+    box-shadow:
+      rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .menu a {
+    display: block;
+    margin: auto;
+    transition: all 0.6s ease;
+    font-size: 1.1rem;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover {
+    margin: auto;
+  }
+
+  nav .right .btn {
+    padding: 1rem 1.2rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0rem;
+    margin: 0rem;
+  }
+
+  .menu.open {
+    right: 0%;
+  }
+
+  .subHeading {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .mainHead {
+    font-size: 3rem;
+    letter-spacing: -0.1rem;
+  }
+
+  .subHead {
+    font-size: 1.1rem;
+  }
+
+  .skills {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 400px;
+  }
+
+  .skills .box {
+    border-radius: 2rem;
+    padding: 1rem;
+    gap: 0.51rem;
+  }
+
+  .skills .box img {
+    height: 160px;
+
+    border-radius: 1.3rem;
+  }
+
+  .skills .box h1 {
+    font-size: 1.2rem;
+  }
+
+  .skills .box p {
+    font-size: 0.9rem;
+  }
+
+  .skills .live {
+    font-size: 1rem;
+  }
+
+  /* Services Section */
+
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    max-width: 400px;
+  }
+
+  .services .box {
+    background-color: #f3f3f3;
+    border-radius: 2em;
+    gap: 0.5rem;
+  }
+
+  .services video {
+    border-radius: 1.3rem;
+  }
+
+  .services .box h1 {
+    font-size: 1.1rem;
+  }
+
+  /* About section */
+
+  .aboutMe {
+    max-width: 450px;
+    /* CONSTRAINT */
+    gap: 1rem;
+    /* Dan Koe spacing */
+  }
+
+  /* LEFT IMAGE */
+
+  .photoContainer {
+    width: 250px;
+    /* FIXED SIZE (important) */
+    height: 250px;
+  }
+
+  /* RIGHT TEXT */
+
+  .rightAbout h1 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+  }
+
+  .rightAbout p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin-bottom: -3rem;
+  }
+
+  .socialIcon {
+    width: 25px;
+    height: 25px;
+  }
+
+  footer {
+    height: 4rem;
+    font-size: 0.9rem;
+    margin-top: 0rem;
+  }
+}
+
 @media screen and (max-width: 360px) {
   nav .left img {
     width: 3rem;
